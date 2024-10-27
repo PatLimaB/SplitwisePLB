@@ -129,9 +129,44 @@ select {
     color: var(--black-color);
 }
 
+/* Radio Button Styles */
 input[type="radio"] {
-    margin-right: 5px;
+    display: none; /* Ocultar el botón de radio original */
 }
+
+.gender-label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.gender-icon {
+    width: 24px; /* Tamaño del icono */
+    height: 24px;
+    border-radius: 50%; /* Hacerlo circular */
+    border: 2px solid var(--secondary-color);
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+    transition: background-color 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+
+input[type="radio"]:checked + .gender-icon {
+    background-color: var(--accent-color); /* Color de fondo cuando está seleccionado */
+    border-color: var(--white-color); /* Color del borde cuando está seleccionado */
+}
+
+input[type="radio"]:checked + .gender-icon:after {
+    content: ''; /* Agregar contenido pseudo-elemento */
+    width: 10px; /* Tamaño del punto */
+    height: 10px;
+    border-radius: 50%; /* Hacerlo circular */
+    background-color: var(--white-color); /* Color del punto */
+}
+
 
 .icon-option {
     width: 50px;

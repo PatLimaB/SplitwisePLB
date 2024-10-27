@@ -65,8 +65,16 @@
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required><br>
                 <label>Gender</label>
-                <input type="radio" name="gender" id="male" value="male">Male
-                <input type="radio" name="gender" id="female" value="female">Female<br>
+                <label class="gender-label">
+                    <input type="radio" name="gender" id="male" value="male">
+                    <span class="gender-icon"></span>
+                    Male
+                </label>
+                <label class="gender-label">
+                    <input type="radio" name="gender" id="female" value="female">
+                    <span class="gender-icon"></span>
+                    Female
+                </label>
                 <label>Icon</label>
                 <div>
                     <img id="user-icon-button1" src="./src/img/icon1.png" class="icon-option">
