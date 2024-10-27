@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Raleway:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --primary-color: #0b3232;
+    --secondary-color: #5CAAB4;
+    --accent-color: #28d9f0;
+    --base-color: #F2EBDD;
+    --black-color: #333;
+    --white-color: #fff;
+    --button-hover-color: #1f666d;
+    --border-radius: 8px;
+    --padding: 12px;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--base-color);
+}
+
+header {
+    width: 100%;
+    background: var(--primary-color);
+    padding: 15px;
+    color: var(--white-color);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#title-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#title-span {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+section {
+    background-color: var(--white-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Button Styles */
+button {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Special Button Containers */
+#add-button-container,
+#buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.home-button {
+    background-color: var(--primary-color);
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 8px;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    color: var(--black-color);
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.icon-option {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: border-color 0.3s;
+}
+
+.icon-option:hover {
+    border-color: var(--accent-color);
+}
+
+.selected {
+    border-color: var(--accent-color);
+    border-width: 2px;
+}
+
+/* Expense and User Containers */
+#month-container,
+#user-container,
+#balance-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--secondary-color);
+}
+
+#expense-container,
+#user-balance {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#expense-icon,
+#user-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+
+#expense-title,
+#user-name {
+    font-size: 1.1rem;
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+#expense-quantity,
+#user-paid,
+#user-owed {
+    font-size: 1rem;
+    color: var(--accent-color);
+}
+
+.user-icon, .expense-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.user-entry{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.expense-entry{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.expense-details {
+    display: flex;
+    gap: 15px;
+}
+
+footer {
+    background: var(--secondary-color);
+    color: var(--white-color);
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+}
