@@ -76,7 +76,6 @@ section {
     display: none;
 }
 
-/* Button Styles */
 button {
     background-color: var(--secondary-color);
     color: var(--white-color);
@@ -94,7 +93,6 @@ button:hover {
     background-color: var(--button-hover-color);
 }
 
-/* Special Button Containers */
 #add-button-container,
 #buttons-container {
     display: flex;
@@ -129,9 +127,8 @@ select {
     color: var(--black-color);
 }
 
-/* Radio Button Styles */
 input[type="radio"] {
-    display: none; /* Ocultar el botón de radio original */
+    display: none; 
 }
 
 .gender-label {
@@ -142,29 +139,29 @@ input[type="radio"] {
 }
 
 .gender-icon {
-    width: 24px; /* Tamaño del icono */
+    width: 24px; 
     height: 24px;
-    border-radius: 50%; /* Hacerlo circular */
+    border-radius: 50%;
     border: 2px solid var(--secondary-color);
     background-color: var(--white-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 8px; /* Espacio entre el icono y el texto */
-    transition: background-color 0.3s, border-color 0.3s; /* Transiciones suaves */
+    margin-right: 8px; 
+    transition: background-color 0.3s, border-color 0.3s; 
 }
 
 input[type="radio"]:checked + .gender-icon {
-    background-color: var(--accent-color); /* Color de fondo cuando está seleccionado */
-    border-color: var(--white-color); /* Color del borde cuando está seleccionado */
+    background-color: var(--accent-color); 
+    border-color: var(--white-color); 
 }
 
 input[type="radio"]:checked + .gender-icon:after {
-    content: ''; /* Agregar contenido pseudo-elemento */
-    width: 10px; /* Tamaño del punto */
+    content: ''; 
+    width: 10px; 
     height: 10px;
-    border-radius: 50%; /* Hacerlo circular */
-    background-color: var(--white-color); /* Color del punto */
+    border-radius: 50%;
+    background-color: var(--white-color); 
 }
 
 
@@ -187,7 +184,6 @@ input[type="radio"]:checked + .gender-icon:after {
     border-width: 2px;
 }
 
-/* Expense and User Containers */
 #month-container,
 #user-container,
 #balance-container {
